@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      xmlns:maps="nativescript-google-maps-sdk" 
+      navigatingTo="onNavigatingTo" class="page">
+	<Page.actionBar>
+		<ActionBar title="Google Maps Test" icon="" class="action-bar">
+		</ActionBar>
+	</Page.actionBar>
+
+	<GridLayout>
+        <maps:mapView latitude="{{ latitude }}" longitude="{{ longitude }}" 
+                      zoom="{{ zoom }}" padding="{{ padding }}" 
+                      mapReady="{{ onMapReady }}" />
+    </GridLayout>
+</Page>
